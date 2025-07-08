@@ -13,21 +13,19 @@
   <header class="bg-[#002B5B] text-white p-6 shadow">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-4xl font-bold">EditMedic</h1>
-     
-     <nav class="space-x-4 relative flex items-center">
-        <!-- Dropdown group -->
-        <div class="relative group">
-          <!-- Services trigger -->
-          <div class="hover:underline cursor-pointer">Services</div>
-          <!-- Dropdown menu -->
-          <div class="absolute left-0 top-full mt-2 bg-white text-gray-900 shadow-lg rounded-lg w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200 z-50">
+
+      <nav class="flex items-center space-x-6 relative">
+        <!-- Services Dropdown -->
+        <div class="relative group inline-block">
+          <span class="hover:underline cursor-pointer">Services</span>
+          <div class="absolute hidden group-hover:block bg-white text-gray-900 shadow-lg mt-2 rounded-lg z-50 w-48">
             <a href="#our-services" class="block px-4 py-2 hover:bg-gray-100">Our Services</a>
             <a href="#we-help" class="block px-4 py-2 hover:bg-gray-100">We Help With</a>
             <a href="#examples" class="block px-4 py-2 hover:bg-gray-100">Examples</a>
           </div>
         </div>
 
-        <!-- Other Nav Items -->
+           <!-- Other Nav Items -->
         <a href="#price" class="hover:underline">Pricing</a>
         <a href="#about" class="hover:underline">About Us</a>
         <a href="#contact" class="hover:underline">Contact</a>
