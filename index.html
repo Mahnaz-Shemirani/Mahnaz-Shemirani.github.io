@@ -13,13 +13,19 @@
   <header class="bg-[#002B5B] text-white p-6 shadow">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-4xl font-bold">EditMedic</h1>
-      <nav class="space-x-4">
-        <a href="#services" class="hover:underline">Services</a>
+      <nav class="relative group">
+        <div class="inline-block relative">
+          <button class="hover:underline">Services</button>
+          <div class="absolute hidden group-hover:block bg-white text-gray-900 shadow-lg mt-2 rounded-lg z-50 w-48">
+            <a href="#our-services" class="block px-4 py-2 hover:bg-gray-100">Our Services</a>
+            <a href="#we-help" class="block px-4 py-2 hover:bg-gray-100">We Help With</a>
+            <a href="#examples" class="block px-4 py-2 hover:bg-gray-100">Examples</a>
+          </div>
+        </div>
         <a href="#price" class="hover:underline">Pricing</a>
         <a href="#about" class="hover:underline">About Us</a>
         <a href="#contact" class="hover:underline">Contact</a>
       </nav>
-    </div>
   </header>
 
   <section class="text-center py-12 px-4">
@@ -27,7 +33,7 @@
     <p class="text-lg max-w-2xl mx-auto">We help medical, biomedical, and life science professionals polish their manuscripts for publication.</p>
   </section>
 
-  <section id="services" class="bg-gray-50 py-16 px-4 scroll-mt-20">
+  <section id="our-services" class="py-16 px-4 scroll-mt-20">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold text-center text-[#002B5B] mb-12">Our Services</h2>
       <div class="grid md:grid-cols-3 gap-8">
@@ -66,7 +72,7 @@
   </section>
 
   <!-- What We Can Help With Section -->
-<section id="service" class="bg-white py-12 px-4">
+<section id="we-help" class="bg-white py-12 px-4">
   <div class="max-w-7xl mx-auto text-center">
     <h2 class="text-3xl font-bold text-gray-800 mb-6">What We Can Help With</h2>
     <p class="text-gray-600 mb-10">We offer expert editing and proofreading services for various academic and professional documents.</p>
@@ -82,7 +88,7 @@
 </section>
 
   <!-- Editing Examples -->
-<section id="service" class="py-12 bg-white">
+<section id="examples" class="py-12 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Editing Examples</h2>
     <div class="overflow-x-auto">
