@@ -15,17 +15,12 @@
       <h1 class="text-4xl font-bold">EditMedic</h1>
 
       <nav class="flex items-center space-x-6 relative">
-        <!-- Services dropdown -->
         <div class="relative group">
-          <button
-            class="cursor-pointer hover:underline focus:outline-none"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Services
-          </button>
+          <!-- The trigger and dropdown are both inside this div -->
+          <div class="cursor-pointer hover:underline">Services</div>
+      
           <div
-            class="absolute left-0 top-full mt-2 w-48 bg-white text-gray-900 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-50"
+            class="absolute left-0 top-full mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-50"
           >
             <a href="#our-services" class="block px-4 py-2 hover:bg-gray-100">Our Services</a>
             <a href="#we-help" class="block px-4 py-2 hover:bg-gray-100">We Help With</a>
