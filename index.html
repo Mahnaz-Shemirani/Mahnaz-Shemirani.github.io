@@ -15,18 +15,26 @@
       <h1 class="text-4xl font-bold">EditMedic</h1>
 
       <nav class="flex items-center space-x-6 relative">
+        <!-- Dropdown wrapper with 'group' -->
         <div class="relative group">
-          <!-- The trigger and dropdown are both inside this div -->
-          <div class="cursor-pointer hover:underline">Services</div>
-      
+          <!-- Trigger -->
           <div
-            class="absolute left-0 top-full mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-50"
+            class="cursor-pointer hover:underline px-2 py-1"
+          >
+            Services
+          </div>
+      
+          <!-- Dropdown -->
+          <div
+            class="absolute left-0 top-full mt-0 bg-white text-black rounded-md shadow-lg w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200 z-50"
+            style="margin-top: 0;"  <!-- eliminates gap -->
           >
             <a href="#our-services" class="block px-4 py-2 hover:bg-gray-100">Our Services</a>
             <a href="#we-help" class="block px-4 py-2 hover:bg-gray-100">We Help With</a>
             <a href="#examples" class="block px-4 py-2 hover:bg-gray-100">Examples</a>
           </div>
         </div>
+
 
            <!-- Other Nav Items -->
         <a href="#price" class="hover:underline">Pricing</a>
