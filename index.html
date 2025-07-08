@@ -14,16 +14,19 @@
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-4xl font-bold">EditMedic</h1>
       
-      <nav class="flex items-center space-x-6">
-        <!-- Services Dropdown -->
+      <nav class="flex items-center space-x-6 relative">
+        <!-- Dropdown wrapper -->
         <div class="relative group">
-          <div class="cursor-pointer hover:underline">Services</div>
+          <!-- Trigger -->
+          <div class="hover:underline cursor-pointer">Services</div>
       
-          <!-- DROPDOWN -->
-          <div class="absolute left-0 mt-1 hidden group-hover:block bg-white text-gray-900 shadow-lg rounded-lg z-50 w-48">
-            <a href="#our-services" class="block px-4 py-2 hover:bg-gray-100">Our Services</a>
-            <a href="#we-help" class="block px-4 py-2 hover:bg-gray-100">We Help With</a>
-            <a href="#examples" class="block px-4 py-2 hover:bg-gray-100">Examples</a>
+          <!-- Dropdown content -->
+          <div class="absolute top-full left-0 bg-white shadow-lg rounded-lg w-48 mt-0 group-hover:flex hidden flex-col z-50"
+               onmouseover="this.style.display='flex'" 
+               onmouseout="this.style.display='none'">
+            <a href="#our-services" class="px-4 py-2 hover:bg-gray-100">Our Services</a>
+            <a href="#we-help" class="px-4 py-2 hover:bg-gray-100">We Help With</a>
+            <a href="#examples" class="px-4 py-2 hover:bg-gray-100">Examples</a>
           </div>
         </div>
 
